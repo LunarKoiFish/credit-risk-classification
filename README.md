@@ -5,17 +5,18 @@
 
 ## Overview of the Analysis
 
-    The purpose of this analysis is to assess the credit risk of individuals applying for loans using our own machine learning models that we trained. The goal is to predict if an individual will be risky to loan to based on various variables. 
     
-    These variables are loan_size, interest_rate, borrower_income, dept_to_income, num_of_accounts, derogatory_marks, and total_dept.
-
-    Loan_status column shows either 0 or 1, 0 means that the loan is health while a 1 represents that the loan has high risk of defaulting. Defaulting means that the individual will miss payments or can't pay the loan back.
+The purpose of this analysis is to assess the credit risk of individuals applying for loans using our own machine learning models that we trained. The goal is to predict if an individual will be risky to loan to based on various variables. 
     
-    The main goal of the challenge is to build and evaluate our machine learning model. With a reliable model, we can help the company predict whether or not it will be risky lending to a peer.
+These variables are loan_size, interest_rate, borrower_income, dept_to_income, num_of_accounts, derogatory_marks, and total_dept.
 
-    In the first stage of the machine learning process, we split the data into training and testing sets. In this stage, we created labels set (y) from the "loan_status" column and then create the features or variables (x) from the rest of the column. The data is further split into training or testing datasets using train_test_split from sklearn. 
+Loan_status column shows either 0 or 1, 0 means that the loan is health while a 1 represents that the loan has high risk of defaulting. Defaulting means that the individual will miss payments or can't pay the loan back.
+    
+The main goal of the challenge is to build and evaluate our machine learning model. With a reliable model, we can help the company predict whether or not it will be risky lending to a peer.
 
-    The second stage of the model is to create a logistic regression model. We use logistic regressio model as it is simple when working with binary classification tasks. To do that we fit the logistic regression model using training data before saving predictiong based on the testing data labels and fitted model. We then evaluate the model's performance by generating a confusion matrix and classification report.
+In the first stage of the machine learning process, we split the data into training and testing sets. In this stage, we created labels set (y) from the "loan_status" column and then create the features or variables (x) from the rest of the column. The data is further split into training or testing datasets using train_test_split from sklearn. 
+
+The second stage of the model is to create a logistic regression model. We use logistic regressio model as it is simple when working with binary classification tasks. To do that we fit the logistic regression model using training data before saving predictiong based on the testing data labels and fitted model. We then evaluate the model's performance by generating a confusion matrix and classification report.
 
 
 ## Results
